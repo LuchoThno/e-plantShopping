@@ -1,0 +1,86 @@
+:root {
+    --main-bg-color: #f8faf8; /* Light green background matching ProductList.css */
+    --main-text-color: #2e5c24; /* Dark green text matching theme */
+    --accent-color: #4caf50; /* Green accent matching buttons throughout */
+    --secondary-accent: #2e7d32; /* Darker green for highlights */
+    --font-family: 'Poppins', sans-serif; /* Font matching ProductList.css and others */
+    --font-size-base: 16px;
+    --line-height-base: 1.5;
+    --border-radius: 8px; /* Rounded corners matching cards */
+    --box-shadow-base: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --hover-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--secondary-accent);
+}
+
+button {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 10px 15px;
+    cursor: pointer;
+    box-shadow: var(--box-shadow-base);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    font-family: var(--font-family);
+}
+
+button:hover {
+    background-color: #43a047; /* Darker green on hover */
+    transform: scale(1.05);
+    box-shadow: var(--hover-shadow);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.5); /* Green focus ring */
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Additional global styles for consistency */
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--main-text-color);
+    font-family: var(--font-family);
+}
+
+input, textarea, select {
+    font-family: var(--font-family);
+    border-radius: var(--border-radius);
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+}
