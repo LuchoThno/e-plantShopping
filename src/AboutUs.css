@@ -1,33 +1,100 @@
 .about-us-container {
-    width: 1000px;
-    /* margin: 0 auto; */
-    /* padding: 20px; */
-    /* background-color: red; */
-    text-align: justify;
-  }
-  
-  .about-us-heading {
-    font-size: 32px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .about-us-description {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-  
-  .about-us-content {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-  .plant_logo_right{
-    text-align: right;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom right, #d4e9d6ff, #f1f8e9);
+  color: #2e7d32;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+}
+
+/* --- Encabezado principal --- */
+.about-us-header {
+  margin-bottom: 2.5rem;
+}
+
+.about-us-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.about-us-heading h1 {
+  font-size: 2.8rem;
+  color: #1b5e20;
+  letter-spacing: 1px;
+}
+
+.plant-logo {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  filter: brightness(1.1) contrast(1.2);
+  background: none;
+  mix-blend-mode: multiply; /* o 'darken' si tu fondo es claro */
+}
+
+.plant-logo:hover {
+  transform: rotate(10deg) scale(1.1);
+}
+
+.about-us-subtitle {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #388e3c;
+}
+
+.about-us-subtitle span {
+  font-weight: 700;
+  color: #2e7d32;
+}
+
+/* --- Secciones de texto --- */
+.about-us-section {
+  max-width: 800px;
+  margin-top: 1.5rem;
+  line-height: 1.7;
+}
+
+.about-us-content {
+  margin-bottom: 1.2rem;
+  font-size: 1.1rem;
+
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .about-us-container {
+    padding: 3rem 1rem;
   }
 
-  .plant_logo_left{
-    text-align: left;
+  .about-us-heading h1 {
+    font-size: 2rem;
   }
+
+.plant-logo {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+  filter: brightness(1.1) contrast(1.2);
+  background: none;
+  mix-blend-mode: multiply; /* o 'darken' si tu fondo es claro */
+
+  .about-us-subtitle {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 480px) {
+  .about-us-heading {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .about-us-heading h1 {
+    font-size: 1.8rem;
+  }
+}
