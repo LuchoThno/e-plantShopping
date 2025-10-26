@@ -12,7 +12,7 @@ function App() {
   const handleHomeClick = () => setShowProductList(false);
 
   return (
-    <Router basename="/shoppingreact">
+    <Router basename="/e-plantShopping/">
       <Routes>
         <Route path="/" element={
           <div className="app-container">
