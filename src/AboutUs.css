@@ -76,13 +76,14 @@
     font-size: 2rem;
   }
 
-.plant-logo {
-  height: 50px;
-  width: 50px;
-  object-fit: contain;
-  filter: brightness(1.1) contrast(1.2);
-  background: none;
-  mix-blend-mode: multiply; /* o 'darken' si tu fondo es claro */
+  .plant-logo {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+    filter: brightness(1.1) contrast(1.2);
+    background: none;
+    mix-blend-mode: multiply; /* o 'darken' si tu fondo es claro */
+  }
 
   .about-us-subtitle {
     font-size: 1.1rem;
